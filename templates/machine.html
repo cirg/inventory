@@ -1,5 +1,17 @@
+{>"flashmessages.html"/}
+
 <h1>{?name}{name}{:else}(unnamed){/name}</h1>
 
 <dl>
-	<li>Location</li>
-</ul>
+	<dt>Location</dt>
+	<dd>{location}</dt>
+</dl>
+
+<a href="{baseURL}/edit/{_id}">Edit</a>
+
+<form class="delete_form" action="{baseURL}/delete/{_id}" method="POST">
+	<div class="button">
+		<input class="icon" type="submit" value="X" />
+		<input class="label" type="submit" value="Delete" />
+	</div>
+</form>
