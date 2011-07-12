@@ -1,0 +1,30 @@
+<h1>Machines</h1>
+
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Location</th>
+		<th>Custodian</th>
+		<th><abbr title="Operating System">OS</abbr></th>
+		<th>Manufacturer</th>
+		<th>Model</th>
+		<th>Serial</th>
+		<th>Type</th>
+		<th>UW Tag</th>
+		<th>Comments</th>
+	</tr>
+	{#rows}
+	<tr>
+		<td><a href="{baseURL}/view/{id}">{value.name}</a></td>
+		<td>{value.location}</td>
+		<td>{value.custodian}</td>
+		<td>{value.operating_system}</td>
+		<td>{value.manufacturer}</td>
+		<td>{value.model}</td>
+		<td>{value.serial}</td>
+		<td>{value.machine_type}</td>
+		<td>{value.uw_tag}</td>
+		<td>{value.comments}</td>
+	<tr>
+	{/rows}
+</table>
